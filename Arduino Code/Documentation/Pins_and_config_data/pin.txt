@@ -1,0 +1,22 @@
+//Right tyre forward
+  digitalWrite(8,LOW);
+  digitalWrite(9,HIGH);
+
+//Left tyre forward
+  digitalWrite(10,LOW);
+  digitalWrite(11,HIGH);
+
+//Ultrasonic
+#define TRIGGER_PIN_L  22  // Arduino pin tied to trigger pin on the ultrasonic sensor.
+#define ECHO_PIN_L     23 // Arduino pin tied to echo pin on the ultrasonic sensor.
+#define TRIGGER_PIN_C  48  // Arduino pin tied to trigger pin on the ultrasonic sensor.
+#define ECHO_PIN_C     50 // Arduino pin tied to echo pin on the ultrasonic sensor.
+#define TRIGGER_PIN_R  52  // Arduino pin tied to trigger pin on the ultrasonic sensor.
+#define ECHO_PIN_R     53 // Arduino pin tied to echo pin on the ultrasonic sensor.
+
+
+////LSA DIGITAL Read pins activation
+  for(int i=26;i<=33;i++){
+  pinMode(i,INPUT);
+  }
+
